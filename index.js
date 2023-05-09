@@ -11,7 +11,7 @@ pool
     password: 'password',
   })
   .then(() => {
-    app.listen(3005, () => {
+    app.listen(process.env.PORT, () => {
       // Remove the parentheses after 'app'
       console.log('Server is listening on port 3005');
     });
